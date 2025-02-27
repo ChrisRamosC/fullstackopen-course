@@ -42,9 +42,7 @@ const App = () => {
     <>
       <div>
         <Title text="Anecdote of the day" />
-        <p>
-          {selected} {anecdotes[selected]}
-        </p>
+        <p>{anecdotes[selected]}</p>
         <p>has {votes[selected]} votes</p>
         <Button text="vote" handleClick={handleVote} />
         <Button text="next anecdote" handleClick={handleNextAnecdote} />
